@@ -1,4 +1,10 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
+  padding: 10px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +13,139 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.heading{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 200px;
+}
+
+.heading p{
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.btn-section
+{
+  margin-top: 30px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  background: lightgray;
+  border-radius: 40px;
+  padding: 5px;
+}
+
+.btn-section button{
+  width: 40%;
+  margin: 0 5px;
+  border-radius: 40px;
+  border: none;
+  outline:none;
+  font-size: 1.2rem;
+}
+
+.btn-section button:hover{
+  color: white;
+  background: black;
+}
+
+/* Sell Component */
+
+.sell-component{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;;
+}
+
+.sell-component .sell-top{
+  display: flex;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.sell-component .sell-top .details{
+  width: 60%;
+  padding: 40px;
+}
+
+.details p{
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.details h1{
+  color:green;
+  margin: 2px 0;
+}
+
+.sell-component .img-box{
+  height: 100%;
+}
+
+.sell-component .img-box img{
+  object-fit: cover;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.slider-details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: right;
+}
+.slider-details input{
+  width: 70%;
+}
+
+.sell-component .amount-display{
+  width: 100%;
+}
+
+.sell-component .amount-display input{
+  height: 50px;
+  width: 70%;
+  padding: 5px 12px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.sell-component #submit{
+  width: 60%;
+  height: 50px;
+  border-radius: 40px;
+  outline: none;
+  background:blue;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
 }
